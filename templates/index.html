@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        table,
+        th,
+        td
+        {
+            border: 1px solid black;
+        }
+        h1 {text-align: center;}
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 style="background-color:powderblue;">Crawl label in Familug page</h1>
+        <h1 style="background-color:powderblue;">Familug: Python | Command | Sysadmin | Latest</h1>
+
+
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th style="background-color:#00cc99;">Python</th>
+                    <th style="background-color:#0000ff;">Command</th>
+                    <th style="background-color:#ccff33;">sysadmin</th>
+                    <th style="background-color:#ff6347;">Latest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        {% for title, link in python%}
+                        <p><a href={{link}}>{{title}}</a></p>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for title, link in command %}
+                        <p><a href={{link}}>{{title}}</a></p>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for title, link in sysadmin %}
+                        <p><a href={{link}}>{{title}}</a></p>
+                        {% endfor %}
+                    </td>
+                    <td>
+                        {% for title, link in latest %}
+                        <p><a href={{link}}>{{title}}</a></p>
+                        {% endfor %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>
