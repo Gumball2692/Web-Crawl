@@ -16,8 +16,7 @@ def make_web():
     return render_template('index.html', python=python,
     command=command, sysadmin=sysadmin, latest=latest)
 
-def main():
-    solve()
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=2313)
