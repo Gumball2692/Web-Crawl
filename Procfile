@@ -1,1 +1,1 @@
-web: gunicorn web_crawl:app --log-file -
+web: gunicorn Web_crawl:app --log-file -
